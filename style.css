@@ -2276,4 +2276,53 @@ section {
         width: 40px;
         height: 40px;
     }
+
+    /* Additional mobile polish */
+    .container {
+        padding: 0 16px;
+    }
+
+    .nav-menu {
+        padding: 12px 20px;
+    }
+
+    .nav-menu a {
+        padding: 12px 0;
+        font-size: 1rem;
+        color: var(--gray-800);
+    }
+
+    .hamburger {
+        padding: 10px;
+    }
+
+    .logo {
+        gap: 8px;
+        font-size: 1.25rem;
+    }
+
+    .hero {
+        padding: 80px 0 40px;
+    }
+
+    .hero-content {
+        gap: 20px;
+    }
+
+    /* Ensure images scale correctly on small screens */
+    img,
+    .hero-image img,
+    .screen-item img,
+    .feature-icon img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Increase tap areas for CTA buttons */
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
 }
