@@ -1,8 +1,3 @@
-// ===========================
-// Smooth Scroll & Navigation
-// ===========================
-
-// Sticky Navigation
 const navbar = document.getElementById('navbar');
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
@@ -14,8 +9,6 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('scrolled');
     }
 });
-
-// Mobile Menu Toggle
 function toggleMobileMenu(forceOpen) {
     const willOpen = typeof forceOpen === 'boolean' ? forceOpen : !hamburger.classList.contains('active');
     if (willOpen) {
@@ -39,7 +32,6 @@ hamburger.addEventListener('keydown', (e) => {
     }
 });
 
-// Close mobile menu when clicking a link
 document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -47,7 +39,6 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     });
 });
 
-// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -61,11 +52,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// ===========================
-// Intersection Observer Animation
-// ===========================
-
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -76,7 +62,6 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
             
-            // Trigger counter animation if it's an impact card
             if (entry.target.classList.contains('impact-card')) {
                 const counter = entry.target.querySelector('.impact-number');
                 if (counter && !counter.classList.contains('counted')) {
@@ -87,14 +72,9 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all fade-in elements
 document.querySelectorAll('.fade-in').forEach(el => {
     observer.observe(el);
 });
-
-// ===========================
-// Counter Animation
-// ===========================
 
 function animateCounter(element) {
     element.classList.add('counted');
@@ -126,10 +106,6 @@ function animateCounter(element) {
     updateCounter();
 }
 
-// ===========================
-// Back to Top Button
-// ===========================
-
 const backToTopButton = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
@@ -146,12 +122,6 @@ backToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
-// ===========================
-// Dashboard Mockup Animation
-// ===========================
-
-// Animate chart bars on hover
 const dashboardMockup = document.querySelector('.dashboard-mockup');
 if (dashboardMockup) {
     dashboardMockup.addEventListener('mouseenter', () => {
@@ -167,10 +137,6 @@ if (dashboardMockup) {
     });
 }
 
-// ===========================
-// Form Validation (Newsletter)
-// ===========================
-
 const newsletterForm = document.querySelector('.newsletter-form');
 if (newsletterForm) {
     const emailInput = newsletterForm.querySelector('input[type="email"]');
@@ -182,17 +148,15 @@ if (newsletterForm) {
         const email = emailInput.value.trim();
         
         if (validateEmail(email)) {
-            // Show success message
+            
             submitButton.innerHTML = '<i class="fas fa-check"></i>';
             submitButton.style.background = 'var(--primary-green)';
-            
-            // Reset after 2 seconds
+           
             setTimeout(() => {
                 submitButton.innerHTML = '<i class="fas fa-paper-plane"></i>';
                 emailInput.value = '';
             }, 2000);
         } else {
-            // Show error state
             emailInput.style.borderColor = 'var(--red)';
             setTimeout(() => {
                 emailInput.style.borderColor = '';
@@ -206,19 +170,11 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-// ===========================
-// Dynamic Year in Footer
-// ===========================
-
 const currentYear = new Date().getFullYear();
 const footerText = document.querySelector('.footer-bottom p');
 if (footerText) {
     footerText.innerHTML = footerText.innerHTML.replace('2026', currentYear);
 }
-
-// ===========================
-// Keyboard Navigation
-// ===========================
 
 // Add keyboard support for better accessibility
 document.addEventListener('keydown', (e) => {
@@ -241,11 +197,6 @@ document.addEventListener('keydown', (e) => {
         });
     }
 });
-
-// ===========================
-// Loading Animation
-// ===========================
-
 window.addEventListener('load', () => {
     // Add loaded class to body for any CSS animations
     document.body.classList.add('loaded');
@@ -259,12 +210,6 @@ window.addEventListener('load', () => {
         }
     });
 });
-
-// ===========================
-// Interactive Cards
-// ===========================
-
-// Add tilt effect to feature cards on mouse move
 const cards = document.querySelectorAll('.feature-card, .user-card, .problem-card');
 
 cards.forEach(card => {
@@ -286,10 +231,6 @@ cards.forEach(card => {
         card.style.transform = '';
     });
 });
-
-// ===========================
-// Active Navigation Link
-// ===========================
 
 // Highlight active section in navigation
 const sections = document.querySelectorAll('section[id]');
@@ -608,3 +549,4 @@ if (window.location.hostname === 'localhost' || window.location.hostname === '12
 }
 
 console.log('%c✅ SmartMeds Platform Loaded Successfully', 'color: #00C853; font-size: 14px; font-weight: bold;');
+
