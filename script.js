@@ -16,9 +16,27 @@ window.addEventListener('scroll', () => {
 });
 
 // Mobile Menu Toggle
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
+function toggleMobileMenu(forceOpen) {
+    const willOpen = typeof forceOpen === 'boolean' ? forceOpen : !hamburger.classList.contains('active');
+    if (willOpen) {
+        hamburger.classList.add('active');
+        navMenu.classList.add('active');
+        hamburger.setAttribute('aria-expanded', 'true');
+    } else {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+    }
+}
+
+hamburger.addEventListener('click', () => toggleMobileMenu());
+
+// Allow toggling with keyboard (Enter / Space)
+hamburger.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleMobileMenu();
+    }
 });
 
 // Close mobile menu when clicking a link
@@ -206,8 +224,7 @@ if (footerText) {
 document.addEventListener('keydown', (e) => {
     // ESC key closes mobile menu
     if (e.key === 'Escape' && navMenu.classList.contains('active')) {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
+        toggleMobileMenu(false);
     }
     
     // Arrow keys for navigation (optional enhancement)
