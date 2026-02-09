@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmartMeds - Medicine Stock Exchange Platform. Stop medicine waste, start smart distribution.">
+    <title>SmartMeds - Medicine Stock Exchange Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>SmartMeds</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#demo" class="btn-secondary">Try Demo</a>
+                <a href="#register" class="btn-primary">Get Started</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-gradient"></div>
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Revolutionizing Healthcare Distribution</span>
+                </div>
+                <h1 class="hero-title">Stop Medicine Waste.<br>Start Smart Distribution.</h1>
+                <p class="hero-subtitle">
+                    AI-powered platform connecting pharmacies to reduce medicine expiry by 40%, 
+                    save costs, and help patients find medicines instantly.
+                </p>
+                <div class="hero-cta">
+                    <a href="#demo" class="btn-primary btn-large">
+                        <i class="fas fa-play-circle"></i>
+                        Try Live Demo
+                    </a>
+                    <a href="#register" class="btn-secondary btn-large">
+                        <i class="fas fa-store"></i>
+                        Register Pharmacy
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-pills"></i>
+                        <div>
+                            <span class="stat-number">10,000+</span>
+                            <span class="stat-label">Medicines Tracked</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-clinic-medical"></i>
+                        <div>
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Pharmacies Connected</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <span class="stat-number">40%</span>
+                            <span class="stat-label">Waste Reduction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="mockup-title">Pharmacy Dashboard</div>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="mockup-sidebar">
+                            <div class="sidebar-item active"><i class="fas fa-th-large"></i> Dashboard</div>
+                            <div class="sidebar-item"><i class="fas fa-boxes"></i> Inventory</div>
+                            <div class="sidebar-item"><i class="fas fa-exchange-alt"></i> Exchange</div>
+                            <div class="sidebar-item"><i class="fas fa-chart-bar"></i> Analytics</div>
+                        </div>
+                        <div class="mockup-main">
+                            <div class="metric-cards">
+                                <div class="metric-card green">
+                                    <i class="fas fa-pills"></i>
+                                    <div class="metric-value">2,847</div>
+                                    <div class="metric-label">Total Stock</div>
+                                </div>
+                                <div class="metric-card orange">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <div class="metric-value">127</div>
+                                    <div class="metric-label">Near Expiry</div>
+                                </div>
+                                <div class="metric-card blue">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    <div class="metric-value">43</div>
+                                    <div class="metric-label">Active Exchanges</div>
+                                </div>
+                            </div>
+                            <div class="chart-placeholder">
+                                <div class="chart-bar" style="height: 60%"></div>
+                                <div class="chart-bar" style="height: 85%"></div>
+                                <div class="chart-bar" style="height: 45%"></div>
+                                <div class="chart-bar" style="height: 90%"></div>
+                                <div class="chart-bar" style="height: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>The Challenge</span>
+                </div>
+                <h2 class="section-title">The Healthcare Waste Crisis</h2>
+                <p class="section-subtitle">
+                    Pharmacies lose millions in expired medicines while patients struggle to find essential medications
+                </p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card fade-in">
+                    <div class="problem-icon red">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3>Unsold Bulk Medicines</h3>
+                    <p>Pharmacies purchase in bulk but can't sell all stock before expiry, leading to massive inventory waste.</p>
+                    <div class="problem-stat">₹2.5Cr lost annually per pharmacy</div>
+                </div>
+                <div class="problem-card fade-in">
+                    <div class="problem-icon orange">
+                        <i class="fas fa-calendar-times"></i>
+                    </div>
+                    <h3>100% Expiry Losses</h3>
+                    <p>Once expired, medicines become worthless. No recovery, no refund - complete financial loss.</p>
+                    <div class="problem-stat">18-25% of stock expires unsold</div>
+                </div>
+                <div class="problem-card fade-in">
+                    <div class="problem-icon blue">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>No Digital Inventory</h3>
+                    <p>Manual ledgers and Excel sheets make it impossible to track expiry dates and stock levels efficiently.</p>
+                    <div class="problem-stat">70% pharmacies still manual</div>
+                </div>
+                <div class="problem-card fade-in">
+                    <div class="problem-icon purple">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <h3>Patients Visit Multiple Stores</h3>
+                    <p>No way to check medicine availability online. Patients waste time visiting 3-5 pharmacies to find what they need.</p>
+                    <div class="problem-stat">Average 2.5 hours wasted</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution" id="solution">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Our Solution</span>
+                </div>
+                <h2 class="section-title">Smart Medicine Distribution in 4 Steps</h2>
+                <p class="section-subtitle">
+                    Automated workflow that saves money, reduces waste, and helps patients
+                </p>
+            </div>
+            <div class="workflow-container">
+                <div class="workflow-step fade-in">
+                    <div class="step-number">01</div>
+                    <div class="step-icon green">
+                        <i class="fas fa-upload"></i>
+                    </div>
+                    <h3>Upload Inventory</h3>
+                    <p>Pharmacies digitize their stock with batch numbers, expiry dates, and quantities in minutes.</p>
+                    <div class="step-features">
+                        <span><i class="fas fa-check"></i> Bulk CSV upload</span>
+                        <span><i class="fas fa-check"></i> Barcode scanning</span>
+                        <span><i class="fas fa-check"></i> Auto-categorization</span>
+                    </div>
+                </div>
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="workflow-step fade-in">
+                    <div class="step-number">02</div>
+                    <div class="step-icon blue">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Auto Expiry Tracking</h3>
+                    <p>AI monitors all medicines 24/7 and sends alerts 90, 60, and 30 days before expiry.</p>
+                    <div class="step-features">
+                        <span><i class="fas fa-check"></i> Smart notifications</span>
+                        <span><i class="fas fa-check"></i> Priority sorting</span>
+                        <span><i class="fas fa-check"></i> Predictive analytics</span>
+                    </div>
+                </div>
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="workflow-step fade-in">
+                    <div class="step-number">03</div>
+                    <div class="step-icon orange">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Exchange Near-Expiry Stock</h3>
+                    <p>List medicines on marketplace. Other pharmacies purchase at discounted rates before expiry.</p>
+                    <div class="step-features">
+                        <span><i class="fas fa-check"></i> Instant listing</span>
+                        <span><i class="fas fa-check"></i> Smart pricing</span>
+                        <span><i class="fas fa-check"></i> Secure transactions</span>
+                    </div>
+                </div>
+                <div class="workflow-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="workflow-step fade-in">
+                    <div class="step-number">04</div>
+                    <div class="step-icon purple">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+                    <h3>Patient Finds Medicine</h3>
+                    <p>Patients search medicine name, see real-time availability and prices at nearby pharmacies.</p>
+                    <div class="step-features">
+                        <span><i class="fas fa-check"></i> Live inventory</span>
+                        <span><i class="fas fa-check"></i> Price comparison</span>
+                        <span><i class="fas fa-check"></i> Navigation support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Platform Features</span>
+                </div>
+                <h2 class="section-title">Everything You Need in One Platform</h2>
+                <p class="section-subtitle">
+                    Powerful tools designed for pharmacies, patients, and healthcare suppliers
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon green">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Real-Time Inventory</h3>
+                    <p>Track every medicine in your stock with live updates. Know exactly what's expiring when, and what's running low.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Live stock dashboard</li>
+                        <li><i class="fas fa-check-circle"></i> Batch-wise tracking</li>
+                        <li><i class="fas fa-check-circle"></i> Low stock alerts</li>
+                    </ul>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon blue">
+                        <i class="fas fa-store-alt"></i>
+                    </div>
+                    <h3>Stock Exchange Marketplace</h3>
+                    <p>Buy and sell near-expiry medicines with verified pharmacies. Turn potential losses into revenue.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Verified sellers only</li>
+                        <li><i class="fas fa-check-circle"></i> Secure payments</li>
+                        <li><i class="fas fa-check-circle"></i> Delivery tracking</li>
+                    </ul>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon orange">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Smart Discount Engine</h3>
+                    <p>AI automatically suggests optimal discount rates based on expiry date to maximize recovery value.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Dynamic pricing</li>
+                        <li><i class="fas fa-check-circle"></i> Market analysis</li>
+                        <li><i class="fas fa-check-circle"></i> Revenue optimization</li>
+                    </ul>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon purple">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Patient Medicine Finder</h3>
+                    <p>Mobile app for patients to search medicines and find availability at nearby pharmacies with directions.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> GPS-based search</li>
+                        <li><i class="fas fa-check-circle"></i> Price comparison</li>
+                        <li><i class="fas fa-check-circle"></i> Reserve & pickup</li>
+                    </ul>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon red">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Automated Notifications</h3>
+                    <p>Get WhatsApp, SMS, and email alerts for expiring stock, low inventory, and new exchange opportunities.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Multi-channel alerts</li>
+                        <li><i class="fas fa-check-circle"></i> Custom thresholds</li>
+                        <li><i class="fas fa-check-circle"></i> Smart reminders</li>
+                    </ul>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon teal">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Comprehensive insights on waste patterns, revenue recovery, and inventory trends to make data-driven decisions.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check-circle"></i> Visual reports</li>
+                        <li><i class="fas fa-check-circle"></i> Export data</li>
+                        <li><i class="fas fa-check-circle"></i> Forecasting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Users Section -->
+    <section class="users">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">
+                    <i class="fas fa-users"></i>
+                    <span>Who We Serve</span>
+                </div>
+                <h2 class="section-title">Built for Every Healthcare Stakeholder</h2>
+            </div>
+            <div class="users-grid">
+                <div class="user-card fade-in">
+                    <div class="user-icon green">
+                        <i class="fas fa-clinic-medical"></i>
+                    </div>
+                    <h3>Pharmacies</h3>
+                    <p>Reduce expiry losses, optimize inventory, and discover new revenue streams through stock exchange.</p>
+                    <div class="user-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Cut losses by 40%</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Digital inventory management</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Revenue from near-expiry stock</span>
+                        </div>
+                    </div>
+                    <a href="#register" class="user-cta">Register Pharmacy <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="user-card fade-in">
+                    <div class="user-icon blue">
+                        <i class="fas fa-user-injured"></i>
+                    </div>
+                    <h3>Patients</h3>
+                    <p>Find medicines instantly, compare prices, and get directions to nearest available pharmacy.</p>
+                    <div class="user-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Save time & effort</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Real-time availability</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Best prices guaranteed</span>
+                        </div>
+                    </div>
+                    <a href="#download" class="user-cta">Download App <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="user-card fade-in">
+                    <div class="user-icon orange">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Healthcare Suppliers</h3>
+                    <p>Access demand insights, optimize distribution routes, and reduce return logistics costs.</p>
+                    <div class="user-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Demand forecasting</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Network analytics</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check"></i>
+                            <span>Lower return rates</span>
+                        </div>
+                    </div>
+                    <a href="#partner" class="user-cta">Become Partner <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Model Section -->
+    <section class="business-model">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Revenue Model</span>
+                </div>
+                <h2 class="section-title">Sustainable Business Model</h2>
+                <p class="section-subtitle">Multiple revenue streams for long-term growth</p>
+            </div>
+            <div class="business-grid">
+                <div class="business-card fade-in">
+                    <div class="business-icon green">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Subscription Plans</h3>
+                    <p>Tiered monthly subscriptions for pharmacies based on inventory size and features needed.</p>
+                    <div class="pricing-tiers">
+                        <div class="tier">
+                            <span class="tier-name">Basic</span>
+                            <span class="tier-price">₹999/mo</span>
+                        </div>
+                        <div class="tier">
+                            <span class="tier-name">Pro</span>
+                            <span class="tier-price">₹2,499/mo</span>
+                        </div>
+                        <div class="tier">
+                            <span class="tier-name">Enterprise</span>
+                            <span class="tier-price">Custom</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="business-card fade-in">
+                    <div class="business-icon blue">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Transaction Commission</h3>
+                    <p>Small percentage (3-5%) on every successful medicine exchange transaction on the marketplace.</p>
+                    <div class="commission-example">
+                        <div class="example-row">
+                            <span>Transaction Value</span>
+                            <span class="value">₹10,000</span>
+                        </div>
+                        <div class="example-row">
+                            <span>Commission (4%)</span>
+                            <span class="value highlight">₹400</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="business-card fade-in">
+                    <div class="business-icon purple">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Premium Analytics</h3>
+                    <p>Advanced AI-powered insights, forecasting, and custom reports for data-driven decision making.</p>
+                    <div class="analytics-features">
+                        <span><i class="fas fa-brain"></i> AI predictions</span>
+                        <span><i class="fas fa-file-export"></i> Custom reports</span>
+                        <span><i class="fas fa-globe"></i> Market trends</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact" id="impact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">
+                    <i class="fas fa-trophy"></i>
+                    <span>Real Impact</span>
+                </div>
+                <h2 class="section-title">Measurable Results That Matter</h2>
+                <p class="section-subtitle">
+                    Transforming healthcare distribution across the country
+                </p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card fade-in">
+                    <div class="impact-icon green">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="impact-number" data-target="40">0</div>
+                    <div class="impact-unit">% Expiry Reduction</div>
+                    <p>Pharmacies using SmartMeds reduce medicine expiry waste by an average of 40%</p>
+                </div>
+                <div class="impact-card fade-in">
+                    <div class="impact-icon blue">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="impact-number" data-target="75">0</div>
+                    <div class="impact-unit">% Faster Access</div>
+                    <p>Patients find medicines 75% faster compared to visiting multiple pharmacies</p>
+                </div>
+                <div class="impact-card fade-in">
+                    <div class="impact-icon orange">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <div class="impact-number" data-target="1.2">0</div>
+                    <div class="impact-unit">Crore Saved</div>
+                    <p>Total financial losses prevented for our pharmacy partners this year</p>
+                </div>
+                <div class="impact-card fade-in">
+                    <div class="impact-icon purple">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <div class="impact-number" data-target="92">0</div>
+                    <div class="impact-unit">% Less Waste</div>
+                    <p>Reduction in pharmaceutical waste going to landfills through smart redistribution</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Screens Section -->
+    <section class="product-screens">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">
+                    <i class="fas fa-desktop"></i>
+                    <span>Product Preview</span>
+                </div>
+                <h2 class="section-title">Intuitive Interface, Powerful Features</h2>
+                <p class="section-subtitle">
+                    Clean, modern design that makes complex tasks simple
+                </p>
+            </div>
+            <div class="screens-showcase">
+                <div class="screen-item fade-in">
+                    <div class="screen-header">
+                        <span class="screen-title"><i class="fas fa-th-large"></i> Pharmacy Dashboard</span>
+                        <span class="screen-badge">Live View</span>
+                    </div>
+                    <div class="screen-preview dashboard-screen">
+                        <div class="screen-metrics">
+                            <div class="metric green-metric">
+                                <i class="fas fa-pills"></i>
+                                <div>
+                                    <div class="metric-num">2,847</div>
+                                    <div class="metric-text">Total Medicines</div>
+                                </div>
+                            </div>
+                            <div class="metric orange-metric">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <div>
+                                    <div class="metric-num">127</div>
+                                    <div class="metric-text">Near Expiry</div>
+                                </div>
+                            </div>
+                            <div class="metric blue-metric">
+                                <i class="fas fa-dollar-sign"></i>
+                                <div>
+                                    <div class="metric-num">₹2.4L</div>
+                                    <div class="metric-text">Saved This Month</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen-chart">
+                            <div class="chart-title">Stock Expiry Timeline</div>
+                            <div class="mini-bars">
+                                <div class="mini-bar" style="height: 70%"><span>Jan</span></div>
+                                <div class="mini-bar" style="height: 55%"><span>Feb</span></div>
+                                <div class="mini-bar" style="height: 85%"><span>Mar</span></div>
+                                <div class="mini-bar" style="height: 40%"><span>Apr</span></div>
+                                <div class="mini-bar" style="height: 65%"><span>May</span></div>
+                                <div class="mini-bar" style="height: 50%"><span>Jun</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen-item fade-in">
+                    <div class="screen-header">
+                        <span class="screen-title"><i class="fas fa-search"></i> Patient Search Interface</span>
+                        <span class="screen-badge">Mobile App</span>
+                    </div>
+                    <div class="screen-preview search-screen">
+                        <div class="search-bar">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search medicine name..." value="Paracetamol 500mg">
+                        </div>
+                        <div class="search-results">
+                            <div class="result-item">
+                                <div class="result-info">
+                                    <div class="medicine-name">Paracetamol 500mg</div>
+                                    <div class="pharmacy-name"><i class="fas fa-clinic-medical"></i> Apollo Pharmacy</div>
+                                    <div class="distance"><i class="fas fa-map-marker-alt"></i> 0.8 km away</div>
+                                </div>
+                                <div class="result-price">
+                                    <div class="price">₹42</div>
+                                    <div class="stock-badge available">In Stock</div>
+                                </div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-info">
+                                    <div class="medicine-name">Paracetamol 500mg</div>
+                                    <div class="pharmacy-name"><i class="fas fa-clinic-medical"></i> MedPlus</div>
+                                    <div class="distance"><i class="fas fa-map-marker-alt"></i> 1.2 km away</div>
+                                </div>
+                                <div class="result-price">
+                                    <div class="price">₹45</div>
+                                    <div class="stock-badge available">In Stock</div>
+                                </div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-info">
+                                    <div class="medicine-name">Paracetamol 500mg</div>
+                                    <div class="pharmacy-name"><i class="fas fa-clinic-medical"></i> Care Pharmacy</div>
+                                    <div class="distance"><i class="fas fa-map-marker-alt"></i> 2.1 km away</div>
+                                </div>
+                                <div class="result-price">
+                                    <div class="price">₹40</div>
+                                    <div class="stock-badge low">Low Stock</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen-item fade-in">
+                    <div class="screen-header">
+                        <span class="screen-title"><i class="fas fa-table"></i> Inventory Management</span>
+                        <span class="screen-badge">Real-time</span>
+                    </div>
+                    <div class="screen-preview inventory-screen">
+                        <div class="inventory-table">
+                            <div class="table-header">
+                                <span>Medicine</span>
+                                <span>Batch</span>
+                                <span>Qty</span>
+                                <span>Expiry</span>
+                                <span>Status</span>
+                            </div>
+                            <div class="table-row">
+                                <span>Azithromycin 500mg</span>
+                                <span>BT2024A</span>
+                                <span>145</span>
+                                <span>Dec 2026</span>
+                                <span class="status-badge green">Good</span>
+                            </div>
+                            <div class="table-row">
+                                <span>Amoxicillin 250mg</span>
+                                <span>BT2024B</span>
+                                <span>67</span>
+                                <span>Mar 2026</span>
+                                <span class="status-badge orange">Alert</span>
+                            </div>
+                            <div class="table-row">
+                                <span>Ciprofloxacin 500mg</span>
+                                <span>BT2024C</span>
+                                <span>23</span>
+                                <span>Feb 2026</span>
+                                <span class="status-badge red">Critical</span>
+                            </div>
+                            <div class="table-row">
+                                <span>Metformin 500mg</span>
+                                <span>BT2024D</span>
+                                <span>312</span>
+                                <span>Aug 2027</span>
+                                <span class="status-badge green">Good</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen-item fade-in">
+                    <div class="screen-header">
+                        <span class="screen-title"><i class="fas fa-chart-line"></i> Analytics & Reports</span>
+                        <span class="screen-badge">AI Insights</span>
+                    </div>
+                    <div class="screen-preview analytics-screen">
+                        <div class="analytics-header">
+                            <div class="analytics-metric">
+                                <div class="metric-label">Waste Prevented</div>
+                                <div class="metric-value green">₹45,230</div>
+                                <div class="metric-change"><i class="fas fa-arrow-up"></i> 23% vs last month</div>
+                            </div>
+                            <div class="analytics-metric">
+                                <div class="metric-label">Exchanges Made</div>
+                                <div class="metric-value blue">43</div>
+                                <div class="metric-change"><i class="fas fa-arrow-up"></i> 12% vs last month</div>
+                            </div>
+                        </div>
+                        <div class="analytics-chart">
+                            <div class="chart-legend">
+                                <span><div class="legend-dot green"></div> Revenue Saved</span>
+                                <span><div class="legend-dot orange"></div> Expiry Losses</span>
+                            </div>
+                            <div class="trend-chart">
+                                <div class="trend-line green-line"></div>
+                                <div class="trend-line orange-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">
+                    <i class="fas fa-code"></i>
+                    <span>Technology</span>
+                </div>
+                <h2 class="section-title">Built with Modern Tech Stack</h2>
+                <p class="section-subtitle">
+                    Scalable, secure, and production-ready infrastructure
+                </p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-category fade-in">
+                    <h3><i class="fas fa-mobile-alt"></i> Frontend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="tech-name">Flutter / React Native</div>
+                            <div class="tech-desc">Cross-platform mobile apps</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category fade-in">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="tech-name">Node.js / Python</div>
+                            <div class="tech-desc">REST APIs & microservices</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category fade-in">
+                    <h3><i class="fas fa-database"></i> Database</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="tech-name">Firebase / MySQL</div>
+                            <div class="tech-desc">Real-time data sync</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category fade-in">
+                    <h3><i class="fas fa-plug"></i> APIs</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="tech-name">Google Maps</div>
+                            <div class="tech-desc">Location services</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="tech-name">Push Notifications</div>
+                            <div class="tech-desc">FCM & WhatsApp</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category fade-in">
+                    <h3><i class="fas fa-cloud"></i> Hosting</h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <div class="tech-name">AWS / Firebase</div>
+                            <div class="tech-desc">Scalable cloud infrastructure</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap" id="roadmap">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">
+                    <i class="fas fa-map"></i>
+                    <span>Growth Plan</span>
+                </div>
+                <h2 class="section-title">Product Roadmap</h2>
+                <p class="section-subtitle">
+                    Strategic expansion from MVP to nationwide coverage
+                </p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in completed">
+                    <div class="timeline-marker">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q1 2026</div>
+                        <h3>MVP Launch</h3>
+                        <p>Launch beta with 50 pharmacies in Bangalore. Core features: inventory tracking, basic exchange marketplace.</p>
+                        <div class="timeline-tags">
+                            <span>✓ Completed</span>
+                            <span>50 pharmacies</span>
+                            <span>2,000+ users</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in active">
+                    <div class="timeline-marker">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q2 2026</div>
+                        <h3>City Expansion</h3>
+                        <p>Expand to 5 major cities: Mumbai, Delhi, Chennai, Hyderabad, Pune. Add patient mobile app and analytics.</p>
+                        <div class="timeline-tags">
+                            <span>In Progress</span>
+                            <span>Target: 500 pharmacies</span>
+                            <span>5 cities</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q3 2026</div>
+                        <h3>State Coverage</h3>
+                        <p>Cover top 5 states completely. Integrate with major pharmacy chains. Add supplier dashboard and bulk APIs.</p>
+                        <div class="timeline-tags">
+                            <span>Planned</span>
+                            <span>Target: 2,000 pharmacies</span>
+                            <span>Chain partnerships</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q4 2026</div>
+                        <h3>National Rollout</h3>
+                        <p>Nationwide coverage across 100+ cities. Partnership with distributors. Multi-language support and regional customization.</p>
+                        <div class="timeline-tags">
+                            <span>Planned</span>
+                            <span>Target: 5,000+ pharmacies</span>
+                            <span>Pan-India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Q1 2027</div>
+                        <h3>AI Prediction Engine</h3>
+                        <p>Launch ML-based demand forecasting. Predict expiry risks 6 months ahead. Suggest optimal purchase quantities to pharmacies.</p>
+                        <div class="timeline-tags">
+                            <span>Future</span>
+                            <span>AI/ML powered</span>
+                            <span>Predictive analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Ready to Transform Your Pharmacy?</h2>
+                <p>Join 500+ pharmacies already saving thousands every month</p>
+                <div class="cta-buttons">
+                    <a href="#register" class="btn-primary btn-large">
+                        <i class="fas fa-rocket"></i>
+                        Start Free Trial
+                    </a>
+                    <a href="#demo" class="btn-secondary btn-large">
+                        <i class="fas fa-calendar-alt"></i>
+                        Schedule Demo
+                    </a>
+                </div>
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>No credit card required</span>
+                    </div>
+                    <div class="cta-stat">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 support</span>
+                    </div>
+                    <div class="cta-stat">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Free mobile app</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>SmartMeds</span>
+                    </div>
+                    <p class="footer-desc">
+                        Transforming healthcare distribution through technology. 
+                        Reducing waste, saving costs, helping patients.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#demo">Live Demo</a></li>
+                        <li><a href="#download">Mobile App</a></li>
+                        <li><a href="#api">API Docs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press Kit</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#guides">User Guides</a></li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#status">System Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@smartmeds.in">hello@smartmeds.in</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+918000000000">+91 80000 00000</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bangalore, India</span>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Newsletter</h5>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email">
+                            <button><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#cookies">Cookie Policy</a>
+                </div>
+                <p>&copy; 2026 SmartMeds. All rights reserved. Built with ❤️ for healthcare.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
